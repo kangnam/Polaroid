@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D67B7ECC5798BCBFF6EAE61 /* Pods_Polaroid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B8D23CDBC8B876978E0C13 /* Pods_Polaroid.framework */; };
+		EE3DEC6820AB457800546EAF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC6720AB457800546EAF /* HomeController.swift */; };
+		EE3DEC6A20AB47F200546EAF /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC6920AB47F200546EAF /* HomePostCell.swift */; };
+		EE3DEC6C20ACBFCE00546EAF /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC6B20ACBFCE00546EAF /* FirebaseUtils.swift */; };
+		EE3DEC6F20ACC07700546EAF /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC6E20ACC07700546EAF /* UserSearchController.swift */; };
+		EE3DEC7120ACCA1000546EAF /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7020ACCA1000546EAF /* UserSearchCell.swift */; };
+		EE3DEC7420AD064C00546EAF /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7320AD064C00546EAF /* CameraController.swift */; };
+		EE3DEC7620ADF7F500546EAF /* PreviewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7520ADF7F500546EAF /* PreviewContainerView.swift */; };
+		EE3DEC7820AE069500546EAF /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7720AE069500546EAF /* CustomAnimationPresentor.swift */; };
+		EE3DEC7A20AE0AAB00546EAF /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7920AE0AAB00546EAF /* CustomAnimationDismisser.swift */; };
+		EE3DEC7C20AE0F4900546EAF /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7B20AE0F4900546EAF /* CommentsController.swift */; };
+		EE3DEC7E20AE193000546EAF /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7D20AE193000546EAF /* CommentCell.swift */; };
+		EE3DEC8020AE2EF000546EAF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DEC7F20AE2EF000546EAF /* Comment.swift */; };
+		EE438B3320B702FF00F5BCD9 /* SavedPostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE438B3220B702FF00F5BCD9 /* SavedPostsController.swift */; };
+		EE438B3520B7270F00F5BCD9 /* DetailPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE438B3420B7270F00F5BCD9 /* DetailPostController.swift */; };
+		EE438B3720B7668000F5BCD9 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE438B3620B7668000F5BCD9 /* EditProfileController.swift */; };
+		EE556D6920A3646C00889FC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D6820A3646C00889FC6 /* AppDelegate.swift */; };
+		EE556D6B20A3646C00889FC6 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D6A20A3646C00889FC6 /* SignUpController.swift */; };
+		EE556D7020A3646D00889FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE556D6F20A3646D00889FC6 /* Assets.xcassets */; };
+		EE556D7320A3646D00889FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE556D7120A3646D00889FC6 /* LaunchScreen.storyboard */; };
+		EE556D7B20A36CEB00889FC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D7A20A36CEB00889FC6 /* Extensions.swift */; };
+		EE556D7D20A370B500889FC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE556D7C20A370B500889FC6 /* GoogleService-Info.plist */; };
+		EE556D7F20A4E88400889FC6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D7E20A4E88400889FC6 /* MainTabBarController.swift */; };
+		EE556D8120A4E96900889FC6 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8020A4E96900889FC6 /* UserProfileController.swift */; };
+		EE556D8320A4F09F00889FC6 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8220A4F09F00889FC6 /* UserProfileHeader.swift */; };
+		EE556D8720A4F66900889FC6 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8620A4F66900889FC6 /* BaseCell.swift */; };
+		EE556D8A20A927FC00889FC6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8920A927FC00889FC6 /* LoginController.swift */; };
+		EE556D8D20A9B84A00889FC6 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8C20A9B84A00889FC6 /* PhotoSelectorController.swift */; };
+		EE556D8F20A9DC6F00889FC6 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D8E20A9DC6F00889FC6 /* PhotoSelectorHeader.swift */; };
+		EE556D9120A9DC8200889FC6 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9020A9DC8200889FC6 /* PhotoSelectorCell.swift */; };
+		EE556D9320A9DDB200889FC6 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9220A9DDB200889FC6 /* SharePhotoController.swift */; };
+		EE556D9520A9DFB700889FC6 /* EditPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9420A9DFB700889FC6 /* EditPhotoController.swift */; };
+		EE556D9920A9E55600889FC6 /* EditPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9820A9E55600889FC6 /* EditPhotoCell.swift */; };
+		EE556D9C20AA5D8100889FC6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9B20AA5D8100889FC6 /* Post.swift */; };
+		EE556D9E20AA5EE800889FC6 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9D20AA5EE800889FC6 /* UserProfilePhotoCell.swift */; };
+		EE556DA020AA5F6900889FC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556D9F20AA5F6900889FC6 /* User.swift */; };
+		EE556DA220AA6C9100889FC6 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE556DA120AA6C9100889FC6 /* CustomImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2B8D23CDBC8B876978E0C13 /* Pods_Polaroid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polaroid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B49787AF520D16E93E17D7 /* Pods-Polaroid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polaroid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Polaroid/Pods-Polaroid.debug.xcconfig"; sourceTree = "<group>"; };
+		EE3DEC6720AB457800546EAF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		EE3DEC6920AB47F200546EAF /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		EE3DEC6B20ACBFCE00546EAF /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
+		EE3DEC6E20ACC07700546EAF /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
+		EE3DEC7020ACCA1000546EAF /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
+		EE3DEC7320AD064C00546EAF /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		EE3DEC7520ADF7F500546EAF /* PreviewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainerView.swift; sourceTree = "<group>"; };
+		EE3DEC7720AE069500546EAF /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
+		EE3DEC7920AE0AAB00546EAF /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
+		EE3DEC7B20AE0F4900546EAF /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		EE3DEC7D20AE193000546EAF /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		EE3DEC7F20AE2EF000546EAF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		EE3DEC8120AF3AEB00546EAF /* Polaroid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Polaroid.entitlements; sourceTree = "<group>"; };
+		EE438B3220B702FF00F5BCD9 /* SavedPostsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostsController.swift; sourceTree = "<group>"; };
+		EE438B3420B7270F00F5BCD9 /* DetailPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostController.swift; sourceTree = "<group>"; };
+		EE438B3620B7668000F5BCD9 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		EE508E0CA7596E0BDE7DE284 /* Pods-Polaroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polaroid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Polaroid/Pods-Polaroid.release.xcconfig"; sourceTree = "<group>"; };
+		EE556D6520A3646C00889FC6 /* Polaroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE556D6820A3646C00889FC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE556D6A20A3646C00889FC6 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		EE556D6F20A3646D00889FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE556D7220A3646D00889FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE556D7420A3646D00889FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE556D7A20A36CEB00889FC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EE556D7C20A370B500889FC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE556D7E20A4E88400889FC6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EE556D8020A4E96900889FC6 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		EE556D8220A4F09F00889FC6 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		EE556D8620A4F66900889FC6 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		EE556D8920A927FC00889FC6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EE556D8C20A9B84A00889FC6 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		EE556D8E20A9DC6F00889FC6 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		EE556D9020A9DC8200889FC6 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
+		EE556D9220A9DDB200889FC6 /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
+		EE556D9420A9DFB700889FC6 /* EditPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoController.swift; sourceTree = "<group>"; };
+		EE556D9820A9E55600889FC6 /* EditPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoCell.swift; sourceTree = "<group>"; };
+		EE556D9B20AA5D8100889FC6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EE556D9D20AA5EE800889FC6 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
+		EE556D9F20AA5F6900889FC6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE556DA120AA6C9100889FC6 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE556D6220A3646C00889FC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D67B7ECC5798BCBFF6EAE61 /* Pods_Polaroid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8A259C07F65CCE3F385AA34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B8D23CDBC8B876978E0C13 /* Pods_Polaroid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE3DEC6620AB456F00546EAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE3DEC6720AB457800546EAF /* HomeController.swift */,
+				EE3DEC6920AB47F200546EAF /* HomePostCell.swift */,
+				EE3DEC7B20AE0F4900546EAF /* CommentsController.swift */,
+				EE3DEC7D20AE193000546EAF /* CommentCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE3DEC6D20ACC06100546EAF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EE3DEC6E20ACC07700546EAF /* UserSearchController.swift */,
+				EE3DEC7020ACCA1000546EAF /* UserSearchCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EE3DEC7220AD064400546EAF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EE3DEC7320AD064C00546EAF /* CameraController.swift */,
+				EE3DEC7720AE069500546EAF /* CustomAnimationPresentor.swift */,
+				EE3DEC7920AE0AAB00546EAF /* CustomAnimationDismisser.swift */,
+				EE3DEC7520ADF7F500546EAF /* PreviewContainerView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		EE556D5C20A3646C00889FC6 = {
+			isa = PBXGroup;
+			children = (
+				EE556D6720A3646C00889FC6 /* Polaroid */,
+				EE556D6620A3646C00889FC6 /* Products */,
+				F78F169AE3113FFCFB2A8118 /* Pods */,
+				D8A259C07F65CCE3F385AA34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE556D6620A3646C00889FC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D6520A3646C00889FC6 /* Polaroid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE556D6720A3646C00889FC6 /* Polaroid */ = {
+			isa = PBXGroup;
+			children = (
+				EE3DEC8120AF3AEB00546EAF /* Polaroid.entitlements */,
+				EE556D9A20AA5D7100889FC6 /* Models */,
+				EE556D8820A927F300889FC6 /* Login */,
+				EE3DEC7220AD064400546EAF /* Camera */,
+				EE3DEC6620AB456F00546EAF /* Home */,
+				EE3DEC6D20ACC06100546EAF /* Search */,
+				EE556D8B20A9B83800889FC6 /* AddPhoto */,
+				EE556D8420A4F0A900889FC6 /* UserProfile */,
+				EE556D8520A4F0C300889FC6 /* Utils */,
+				EE556D6820A3646C00889FC6 /* AppDelegate.swift */,
+				EE556D7E20A4E88400889FC6 /* MainTabBarController.swift */,
+				EE556D6F20A3646D00889FC6 /* Assets.xcassets */,
+				EE556D7120A3646D00889FC6 /* LaunchScreen.storyboard */,
+				EE556D7420A3646D00889FC6 /* Info.plist */,
+				EE556D7C20A370B500889FC6 /* GoogleService-Info.plist */,
+			);
+			path = Polaroid;
+			sourceTree = "<group>";
+		};
+		EE556D8420A4F0A900889FC6 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D8020A4E96900889FC6 /* UserProfileController.swift */,
+				EE556D8220A4F09F00889FC6 /* UserProfileHeader.swift */,
+				EE556D9D20AA5EE800889FC6 /* UserProfilePhotoCell.swift */,
+				EE438B3220B702FF00F5BCD9 /* SavedPostsController.swift */,
+				EE438B3420B7270F00F5BCD9 /* DetailPostController.swift */,
+				EE438B3620B7668000F5BCD9 /* EditProfileController.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		EE556D8520A4F0C300889FC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D8620A4F66900889FC6 /* BaseCell.swift */,
+				EE556D7A20A36CEB00889FC6 /* Extensions.swift */,
+				EE3DEC6B20ACBFCE00546EAF /* FirebaseUtils.swift */,
+				EE556DA120AA6C9100889FC6 /* CustomImageView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EE556D8820A927F300889FC6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D8920A927FC00889FC6 /* LoginController.swift */,
+				EE556D6A20A3646C00889FC6 /* SignUpController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE556D8B20A9B83800889FC6 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D8C20A9B84A00889FC6 /* PhotoSelectorController.swift */,
+				EE556D9020A9DC8200889FC6 /* PhotoSelectorCell.swift */,
+				EE556D8E20A9DC6F00889FC6 /* PhotoSelectorHeader.swift */,
+				EE556D9420A9DFB700889FC6 /* EditPhotoController.swift */,
+				EE556D9820A9E55600889FC6 /* EditPhotoCell.swift */,
+				EE556D9220A9DDB200889FC6 /* SharePhotoController.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
+		EE556D9A20AA5D7100889FC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE556D9B20AA5D8100889FC6 /* Post.swift */,
+				EE556D9F20AA5F6900889FC6 /* User.swift */,
+				EE3DEC7F20AE2EF000546EAF /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F78F169AE3113FFCFB2A8118 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B49787AF520D16E93E17D7 /* Pods-Polaroid.debug.xcconfig */,
+				EE508E0CA7596E0BDE7DE284 /* Pods-Polaroid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE556D6420A3646C00889FC6 /* Polaroid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE556D7720A3646D00889FC6 /* Build configuration list for PBXNativeTarget "Polaroid" */;
+			buildPhases = (
+				1FFACD1F66E85D01D408B56D /* [CP] Check Pods Manifest.lock */,
+				EE556D6120A3646C00889FC6 /* Sources */,
+				EE556D6220A3646C00889FC6 /* Frameworks */,
+				EE556D6320A3646C00889FC6 /* Resources */,
+				231B547372CC47EE8BC11F18 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polaroid;
+			productName = Polaroid;
+			productReference = EE556D6520A3646C00889FC6 /* Polaroid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE556D5D20A3646C00889FC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Kang Nam";
+				TargetAttributes = {
+					EE556D6420A3646C00889FC6 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EE556D6020A3646C00889FC6 /* Build configuration list for PBXProject "Polaroid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE556D5C20A3646C00889FC6;
+			productRefGroup = EE556D6620A3646C00889FC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE556D6420A3646C00889FC6 /* Polaroid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE556D6320A3646C00889FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE556D7320A3646D00889FC6 /* LaunchScreen.storyboard in Resources */,
+				EE556D7020A3646D00889FC6 /* Assets.xcassets in Resources */,
+				EE556D7D20A370B500889FC6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFACD1F66E85D01D408B56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Polaroid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		231B547372CC47EE8BC11F18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Polaroid/Pods-Polaroid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Polaroid/Pods-Polaroid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE556D6120A3646C00889FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE556D9120A9DC8200889FC6 /* PhotoSelectorCell.swift in Sources */,
+				EE556DA220AA6C9100889FC6 /* CustomImageView.swift in Sources */,
+				EE556D6B20A3646C00889FC6 /* SignUpController.swift in Sources */,
+				EE556D9520A9DFB700889FC6 /* EditPhotoController.swift in Sources */,
+				EE3DEC7820AE069500546EAF /* CustomAnimationPresentor.swift in Sources */,
+				EE3DEC6A20AB47F200546EAF /* HomePostCell.swift in Sources */,
+				EE556D7B20A36CEB00889FC6 /* Extensions.swift in Sources */,
+				EE3DEC7420AD064C00546EAF /* CameraController.swift in Sources */,
+				EE556D7F20A4E88400889FC6 /* MainTabBarController.swift in Sources */,
+				EE3DEC7C20AE0F4900546EAF /* CommentsController.swift in Sources */,
+				EE556D9920A9E55600889FC6 /* EditPhotoCell.swift in Sources */,
+				EE556D8D20A9B84A00889FC6 /* PhotoSelectorController.swift in Sources */,
+				EE438B3320B702FF00F5BCD9 /* SavedPostsController.swift in Sources */,
+				EE556DA020AA5F6900889FC6 /* User.swift in Sources */,
+				EE3DEC7120ACCA1000546EAF /* UserSearchCell.swift in Sources */,
+				EE3DEC7620ADF7F500546EAF /* PreviewContainerView.swift in Sources */,
+				EE556D8320A4F09F00889FC6 /* UserProfileHeader.swift in Sources */,
+				EE556D9320A9DDB200889FC6 /* SharePhotoController.swift in Sources */,
+				EE438B3520B7270F00F5BCD9 /* DetailPostController.swift in Sources */,
+				EE3DEC6C20ACBFCE00546EAF /* FirebaseUtils.swift in Sources */,
+				EE556D9C20AA5D8100889FC6 /* Post.swift in Sources */,
+				EE556D8720A4F66900889FC6 /* BaseCell.swift in Sources */,
+				EE556D8A20A927FC00889FC6 /* LoginController.swift in Sources */,
+				EE556D8120A4E96900889FC6 /* UserProfileController.swift in Sources */,
+				EE556D8F20A9DC6F00889FC6 /* PhotoSelectorHeader.swift in Sources */,
+				EE3DEC7E20AE193000546EAF /* CommentCell.swift in Sources */,
+				EE438B3720B7668000F5BCD9 /* EditProfileController.swift in Sources */,
+				EE556D6920A3646C00889FC6 /* AppDelegate.swift in Sources */,
+				EE3DEC8020AE2EF000546EAF /* Comment.swift in Sources */,
+				EE3DEC6F20ACC07700546EAF /* UserSearchController.swift in Sources */,
+				EE3DEC7A20AE0AAB00546EAF /* CustomAnimationDismisser.swift in Sources */,
+				EE3DEC6820AB457800546EAF /* HomeController.swift in Sources */,
+				EE556D9E20AA5EE800889FC6 /* UserProfilePhotoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE556D7120A3646D00889FC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE556D7220A3646D00889FC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE556D7520A3646D00889FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE556D7620A3646D00889FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE556D7820A3646D00889FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B49787AF520D16E93E17D7 /* Pods-Polaroid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Polaroid/Polaroid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBGKDUGR37;
+				INFOPLIST_FILE = Polaroid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Nam.Polaroid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE556D7920A3646D00889FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE508E0CA7596E0BDE7DE284 /* Pods-Polaroid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Polaroid/Polaroid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBGKDUGR37;
+				INFOPLIST_FILE = Polaroid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Nam.Polaroid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE556D6020A3646C00889FC6 /* Build configuration list for PBXProject "Polaroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE556D7520A3646D00889FC6 /* Debug */,
+				EE556D7620A3646D00889FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE556D7720A3646D00889FC6 /* Build configuration list for PBXNativeTarget "Polaroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE556D7820A3646D00889FC6 /* Debug */,
+				EE556D7920A3646D00889FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE556D5D20A3646C00889FC6 /* Project object */;
+}
